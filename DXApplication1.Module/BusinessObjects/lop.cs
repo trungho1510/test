@@ -63,6 +63,7 @@ namespace DXApplication1.Module.BusinessObjects
         }
         // test add comment
         // test comment 2
+        // trung test
 
     }
 }
