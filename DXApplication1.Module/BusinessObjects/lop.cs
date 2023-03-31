@@ -61,7 +61,7 @@ namespace DXApplication1.Module.BusinessObjects
         {
             get { return GetCollection<sinhvien>(nameof(sinhviens)); }
         }
-
+        // test add comment
 
 
     }
