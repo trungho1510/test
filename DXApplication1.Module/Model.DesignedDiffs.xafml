@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="DXApplication1">
+  <BOModel>
+    <Class Name="DevExpress.Persistent.BaseImpl.PermissionPolicy.PermissionPolicyUser" Caption="Base User" />
+  </BOModel>
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.2.5.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <ListView Id="ApplicationUser_ListView" Caption="Users" />
+    <ListView Id="lop_sinhviens_ListView">
+      <Columns>
+        <ColumnInfo Id="HoTen" SortIndex="0" SortOrder="Ascending" />
+      </Columns>
+    </ListView>
+    <DetailView Id="sinhvien_DetailView">
+      <Items>
+        <PropertyEditor Id="MyProperty" PropertyName="MyProperty" IsNewNode="True" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="sinhvien" RelativeSize="100" Direction="Horizontal" Caption="Ho Ten">
+              <LayoutItem Id="HoTen" RelativeSize="66.62068965517241" />
+              <LayoutItem Id="MyProperty" ViewItem="MyProperty" Index="1" RelativeSize="33.37931034482759" IsNewNode="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
